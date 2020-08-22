@@ -150,15 +150,20 @@ This repo is maintained by [Anomaly Innovations](https://anoma.ly); makers of [S
 
 Create:
 serverless invoke local --function create --path mocks/create-event.json
-
 Get:
 serverless invoke local --function get --path mocks/get-event.json
-
 List:
 serverless invoke local --function list --path mocks/list-event.json
-
 Update:
 serverless invoke local --function update --path mocks/update-event.json
-
 Delete:
 serverless invoke local --function delete --path mocks/delete-event.json
+Billing:
+serverless invoke local --function billing --path mocks/billing-event.json
+
+### Deploy
+All functions:
+serverless deploy
+
+Single function:
+serverless deploy function -f list
